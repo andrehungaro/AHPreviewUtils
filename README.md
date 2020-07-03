@@ -15,7 +15,7 @@ An environment value that indicates whether the SwiftUI view is being rendered i
 
 A custom PreviewProvider that automatically sets `\.isPreview` to `true`. Provide your preview views inside `customPreviews` property in the protocol extension:  
 
-```
+```swift
 struct PreviewText: View {
     
     @Environment(\.isPreview) var isPreview
