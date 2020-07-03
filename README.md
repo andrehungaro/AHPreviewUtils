@@ -6,7 +6,7 @@ A package that extends SwiftUI preview capabilities.
 ## IsPreview
 An environment value that indicates whether the SwiftUI view is being rendered inside a preview session. 
 
-```
+```swift
 .environment(\.isPreview, true)
 ```
 
