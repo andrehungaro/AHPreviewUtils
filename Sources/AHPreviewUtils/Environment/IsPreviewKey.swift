@@ -12,8 +12,6 @@ public struct IsPreviewKey: EnvironmentKey {
     public static let defaultValue: Bool = false
 }
 
-@available(OSX 10.15, *)
-@available(iOS 13, *)
 public extension EnvironmentValues {
     
     var isPreview: Bool {
