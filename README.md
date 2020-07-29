@@ -53,7 +53,7 @@ Group your previews in different preview devices by using `PreviewGroup`. It tak
 ```swift
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
-        PreviewGroup(devices: [.iPhone_SE_1st_generation, .iPhone_4s]) {
+        PreviewGroup(devices: [.iPhone_SE_1st_generation, .iPhone_11_Pro]) {
             TestView()
         }
     }
