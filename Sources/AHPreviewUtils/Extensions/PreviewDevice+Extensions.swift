@@ -63,5 +63,35 @@ public extension PreviewDevice {
     static let watch_Series_4_44mm = PreviewDevice(rawValue: "Apple Watch Series 4 - 44mm")
     static let watch_Series_5_40mm = PreviewDevice(rawValue: "Apple Watch Series 5 - 40mm")
     static let watch_Series_5_44mm = PreviewDevice(rawValue: "Apple Watch Series 5 - 44mm")
+}
 
+extension Sequence where Element == PreviewDevice {
+    
+    static var watch_allSizes: [PreviewDevice] {
+        return [
+            .watch_Series_3_38mm,
+            .watch_Series_5_40mm,
+            .watch_Series_5_44mm
+        ]
+    }
+    
+    static var iPhone_allSizes: [PreviewDevice] {
+        return [
+            .iPhone_SE_1st_generation,
+            .iPhone_SE_2nd_generation,
+            .iPhone_11,
+            .iPhone_11_Pro,
+            .iPhone_11_Pro_Max,
+        ]
+    }
+    
+    static var iPad_allSizes: [PreviewDevice] {
+        return [
+            .iPad_mini_5th_generation,
+            .iPad_Pro_9_7inch,
+            .iPad_Pro_10_5inch,
+            .iPad_Pro_11inch_2nd_generation,
+            .iPad_Pro_12_9inch_4th_generation
+        ]
+    }
 }
